@@ -1,0 +1,130 @@
+.hero .section{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.hero .continerhero{
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px 0;
+    height: 100%;
+}
+.hero .medule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: show;
+
+    
+}
+.hero .left-part{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.hero .left-part h1{
+    font-size: 74px;
+}
+.hero .left-part .whatwedo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero .left-part img{
+   height: 5px;
+}
+.hero .left-part .subtitle{
+   color: #da4ea2;
+}
+.hero .left-part p{
+   font-size: 24px;
+   color: lightgray;
+}
+.hero .left-part button{
+    width: 100px;
+    padding: 10px;
+    background-color: #f70e9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.hero .right-part{
+    flex: 3;
+    position: relative;
+
+}
+.hero .right-part canvas{
+    width: 100px;
+    height: 500px;
+    
+}
+.hero .right-part img{
+    width: 350px;
+    /* height: 600px; */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: animate 2s infinite ease alternate;
+
+}
+@keyframes animate {
+    to{
+        transform: translateY(20px);
+    }
+}
+@media only screen and (max-width: 768px){
+    .hero .section{
+        height: 130vh;
+        
+    }
+    .hero .continerhero{
+        width: 100%;
+    }
+    .hero .medule{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .hero .right-part{
+        flex: 1;
+        width: 100%;
+    
+    }
+    .hero .left-part{
+     flex: 1;
+     align-items: center;
+    
+    }
+    .hero .left-part h1{
+       text-align: center;
+       font-size: 60px;
+
+    }
+    .hero .left-part p{
+        padding: 20px;
+        text-align: center;
+     }
+     .hero .right-part img{
+        width: 300px;
+
+    
+    }
+
+    
+}

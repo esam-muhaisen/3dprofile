@@ -1,0 +1,117 @@
+
+.works .section{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.works .continerworks{
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.works .continerworks .left{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+.works .continerworks .list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.works .continerworks .list-item{
+    font-size: 75px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    position: relative;
+   
+}
+.works .continerworks .list-item:nth-child(1)::after{
+    content: "Web Design";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: pink;
+        width: 0;
+        overflow: hidden;
+   
+}
+.works .continerworks .list-item:nth-child(2)::after{
+    content: "Devlopment";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: pink;
+        width: 0;
+        overflow: hidden;
+   
+}
+.works .continerworks .list-item:nth-child(3)::after{
+    content: "illustration";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: pink;
+        width: 0;
+        overflow: hidden;
+   
+}
+.works .continerworks .list-item:nth-child(4)::after{
+    content: "Product Design";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: pink;
+        width: 0;
+        overflow: hidden;
+   
+}
+.works .continerworks .list-item:nth-child(5)::after{
+    content: "Social Media";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: pink;
+        width: 0;
+        overflow: hidden;
+   
+}
+.works .continerworks .list-item:hover::after{
+    animation: movetext 0.5s linear both;
+    white-space: nowrap;
+    
+   
+}
+@keyframes movetext {
+    to{
+        width: 100%;
+    }
+}
+.works .continerworks .right{
+    flex:1;
+    position: relative;
+}
+@media only screen and (max-width: 768px){
+    .works .continerworks{
+        width: 100%;
+        flex-direction: column;
+    }
+    .works .continerworks .left{
+        padding: 20px;
+        justify-content: center;
+    }
+    .works .continerworks .list-item{
+        font-size: 40px;
+        color: white;
+        -webkit-text-stroke: 0px;
+
+       
+    }
+}

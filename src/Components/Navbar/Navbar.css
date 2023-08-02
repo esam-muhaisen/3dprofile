@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar .containernav{
+    width:1000px;
+    padding: 10px 0;
+}
+.navbar .parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    height: 50px;
+}
+.navbar .links{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+.navbar .listitem{
+    cursor: pointer;
+}
+.navbar .listitem a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .icon{
+    width: 18px;
+    cursor: pointer;
+}
+.navbar .button{
+    width: 100px;
+    padding: 10px;
+    background-color: #da4ea2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+    .navbar{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .navbar .containernav{
+       width: 100%;
+       padding: 10px;
+    }
+    .navbar .list{
+        display: none;
+    }
+}

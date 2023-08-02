@@ -1,0 +1,82 @@
+.who .section{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .who .section{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+} */
+.who .continerwho{
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px 0;
+}
+.who .medule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.who .left-part{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.who .left-part h1{
+    font-size: 50px;
+}
+.who .left-part .whatwedo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.who .left-part img{
+   height: 5px;
+}
+.who .left-part .subtitle{
+   color: #da4ea2;
+}
+.who .left-part p{
+   font-size: 24px;
+   color: lightgray;
+}
+.who .left-part button{
+    width: 120px;
+    padding: 10px;
+    background-color: #f70e9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.who .right-part{
+    flex: 1;
+    position: relative;
+    height: 600px;
+}
+@media only screen and (max-width: 768px){
+    .who .right-part{
+        display: none;
+    }
+    .who .left-part{
+        align-items: center;
+        text-align: center;
+    }
+    .who .left-part h1{
+        /* display: block; */
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,64 @@
+.contact .section{
+    height: 100vh;
+    scroll-snap-align: center;
+ 
+}
+.contact .contianercontact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.contact .left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contact .left .title{
+    font-weight: 200;
+}
+.contact .left form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact .left input{
+    padding: 20px;
+    background-color:#e8e6e6;
+    border: none;
+    border-radius: 5px;
+}
+.contact .left textarea{
+    padding: 20px;
+    background-color:#e8e6e6;
+    border: none;
+    border-radius: 5px;
+    
+}
+.contact .left button{
+    background-color: #da4ea2;
+    color:white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contact .right{
+    flex: 1;
+}
+@media only screen and (max-width: 768px){
+    .contact .right{
+        display: none;
+    }
+    .contact .left{
+        justify-content: center;
+
+    }
+    .contact .left form{
+         width: 300px;
+    }
+}
